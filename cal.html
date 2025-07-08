@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label> Enter First Num:</label><br>
+        <input type="text" name="num1" id="txt1"><br>
+
+        <label> Enter Second Num:</label><br>
+        <input type="text" name="num2" id="txt2"><br>
+        
+        <button type="button" onclick="addition()">ADD</button>
+        <button type="button" onclick="subtractionn()">SUB</button>
+        <button type="button" onclick="multiply()">MUL</button>
+        <button type="button" onclick="divide()">DIV</button> <br> <br>
+        
+        <strong>RESULT:<span id="res"></span></strong>
+
+
+    </form>
+
+    <script>
+        function addition(){
+            let No1=document.getElementById("txt1").value;
+            let No2=document.getElementById("txt2").value;
+            document.getElementById("res").innerHTML=parseInt(No1)+parseInt(No2);
+
+
+        }
+
+
+        function subtractionn(){
+            let No1=document.getElementById("txt1").value;
+            let No2=document.getElementById("txt2").value;
+            document.getElementById("res").innerHTML=parseInt(No1)-parseInt(No2);
+
+
+        }
+
+
+        function multiply(){
+            let No1=document.getElementById("txt1").value;
+            let No2=document.getElementById("txt2").value;
+            document.getElementById("res").innerHTML=parseInt(No1)*parseInt(No2);
+
+
+        }
+        
+
+        function divide(){
+            let No1=document.getElementById("txt1").value;
+            let No2=document.getElementById("txt2").value;
+            document.getElementById("res").innerHTML=parseInt(No1)/parseInt(No2);
+
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

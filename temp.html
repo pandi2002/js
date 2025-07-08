@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <label>Enter Temp in Celcius:</label>
+        <br>
+        <br>
+        <input type="text" id="id1">
+        <br>
+        <br>
+        <button type="button" onclick="convert()">Convert tepm into fahrenheit</button>
+        <br>
+        <br>
+
+
+        <strong>RESULT:<span id="res"></span></strong>
+
+
+
+    </form>
+
+    <script>
+        function convert(){
+            let temp1=document.getElementById("id1").value;
+            document.getElementById("res").innerHTML=((temp1*1.8)+32);
+        }
+    </script>
+
+</body>
+</html>
