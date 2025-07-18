@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #parent {
+        border: 3px solid black;
+        width: 400px;
+        margin: auto;
+        text-align: center;
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    #child {
+        border: 3px solid blanchedalmond;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        background-color: aquamarine;
+
+    }
+</style>
+
+<body>
+    <form>
+        <div id="parent">
+            <div id="child">HI</div>
+            <input type="color" id="change">
+            <br><br>
+            <button id="btn" onclick="changecolor()" type="button">Change Color</button>
+
+        </div>
+
+    </form>
+    <script>
+        function changecolor() {
+            let data = document.getElementById("change").value;
+            document.getElementById("child").style.backgroundColor = data;
+        }
+    </script>
+
+
+</body>
+
+</html>

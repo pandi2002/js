@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <h1 id="d1"></h1>
+    <h1 id="d2">Chennai</h1>
+    <h1 id="d3">India</h1>
+
+    <button type="button" onclick="change()">CHANGE VALUE</button><br>
+    <button type="button" onclick="shadow('red')" >RED</button>
+    <button type="button" onclick="shadow('green')">GREEN</button>
+    <button type="button" onclick="shadow('navy')">NAVY</button>
+    <button type="button" onclick="shadow('orange')">ORANGE</button>
+    <hr>
+
+    <img id="d4" src="./idly.jpg" alt="idly" height="200px" width="300px"><br>
+    <strong id="d5">Idly</strong>
+    <button type="button" onclick="changeimg('./idly.jpg','Idly')">IDLY</button>
+    <button type="button" onclick="changeimg('./samosa.jpg','Samosa')">SAMOSA</button>
+    <button type="button" onclick="changeimg('./vada.jpg','Vada')">VADA</button>
+    <button type="button" onclick="changeimg('./dosa.jpg','Dosa')">DOSA</button>
+    
+    
+    
+
+    
+    <script>
+        function changeimg(imagesrc,food){
+            document.getElementById("d4").src=imagesrc;
+            document.getElementById("d5").innerHTML=food;
+        }
+
+        function change(){
+            document.getElementById("d2").innerHTML="TAMILNADU";
+        
+        }
+        function shadow(color) {
+            document.getElementById("d2").style.color = color;
+        }
+        //innerhtml:it is use to insert,fetch data inside an element.
+        document.getElementById("d1").innerHTML="CHANGEPOND";//set value inside an element
+        document.getElementById("d2").style.color="#39FF14";//apply style to an element
+        let data=document.getElementById("d3").innerHTML;
+        console.log(data);
+
+        //1.document.write
+
+
+
+    </script>
+</body>
+</html>
+
+
+
+<!-- <img id="d4" src="./idly.jpg" alt="idly" height="200px" width="300px"><br>
+<strong>IDLY</strong>
+<button type="button" onclick="changeimg(-1)">Previous</button>
+<button type="button" onclick="changeimg(0)">IDLY</button>
+<button type="button" onclick="changeimg(1)">SAMOSA</button>
+<button type="button" onclick="changeimg(2)">VADA</button>
+<button type="button" onclick="changeimg(3)">DOSA</button>
+<button type="button" onclick="changeimg(1)">Next</button>
+
+<script>
+    let images = ["./idly.jpg", "./samosa.jpg", "./vada.jpg", "./dosa.jpg"];
+    let currentIndex = 0;
+
+    function changeimg(direction) {
+        currentIndex = (currentIndex + direction + images.length) % images.length;
+        document.getElementById("d4").src = images[currentIndex];
+    }
+</script> -->
